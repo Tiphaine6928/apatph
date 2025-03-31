@@ -152,6 +152,10 @@ section h2 {
     text-align: left;
 }
 
+.service ul li {
+    text-decoration: none;
+}
+
 /* === CONTACT === */
 .contact p {
     font-size: 1.2rem;
