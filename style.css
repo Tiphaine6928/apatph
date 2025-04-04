@@ -50,6 +50,7 @@ header .container {
     height: 140px;
     width: auto;
     margin-bottom: 10px;
+    border-radius: 15px;
 }
 
 nav ul {
