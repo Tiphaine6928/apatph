@@ -63,7 +63,7 @@ nav ul li a:hover {
 
 /* === HERO SECTION === */
 .hero {
-    background: url('https://source.unsplash.com/1600x900/?nature,landscape') center/cover no-repeat;
+    background: url(images/handicap.jpg) center/cover no-repeat;
     height: 60vh;
     display: flex;
     align-items: center;
