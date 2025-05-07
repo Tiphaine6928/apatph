@@ -118,19 +118,19 @@ nav ul li a:hover {
 }
 
 /* === PAGE PÔLE SOCIAL === */
-.hero-small {
+.hero-social {
   padding: 100px 20px 60px;
   text-align: center;
   margin-top: 30px;
 }
 
-.hero-small h1 {
+.hero-social h1 {
   font-size: 4rem;
   margin-bottom: 10px;
   color: #004080;
 }
 
-.hero-small p {
+.hero-social p {
   font-size: 1.2rem;
 }
 
@@ -167,3 +167,59 @@ nav ul li a:hover {
   margin-bottom: 10px;
 }
 
+/* === PAGE PÔLE TRAVAIL === */
+
+.hero-travail {
+  padding: 100px 20px 60px;
+  text-align: center;
+  margin-top: 60px;
+}
+
+.hero-travail h1 {
+  font-size: 4rem;
+  margin-bottom: 10px;
+  color: #004080;
+}
+
+.hero-travail p {
+  font-size: 1.2rem;
+  color: black;
+}
+
+.travail-intro,
+.travail-activites,
+.travail-equipe {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.travail-intro p,
+.travail-equipe p {
+  font-size: 1.1rem;
+  max-width: 800px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+.travail-activites .activite-grid {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.travail-activites .activite {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  flex: 1;
+  min-width: 250px;
+  max-width: 300px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.travail-activites .activite h3 {
+  color: #004080;
+  margin-bottom: 10px;
+}
