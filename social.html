@@ -1,27 +1,83 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pôle Social</title>
-    <link rel="stylesheet" href="services.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pôle Social</title>
+  <link rel="stylesheet" href="services.css" />
 </head>
 <body>
-        <!-- Barre de navigation -->
-        <header>
-            <div class="container">
-                <div class="logo-nom">
-                    <img src="https://www.apatph.fr/wp-content/uploads/2024/07/logo-JPG.png" alt="Logo Apatph" class="logo">
-                </div>
-                <nav>
-                    <ul>
-                        <li><a href="#">Accueil</a></li>
-                        <li><a href="#">L'Association</a></li>
-                        <li><a href="#">Nos Services</a></li>
-                        <li><a href="#">Contact</a></li>
-                    </ul>
-                </nav>
-            </div>
-        </header>
+  <!-- Header réutilisé -->
+  <header>
+    <div class="container">
+      <div class="logo-nom">
+        <img src="https://www.apatph.fr/wp-content/uploads/2024/07/logo-JPG.png" alt="Logo APATPH" class="logo" />
+      </div>
+      <nav>
+        <ul>
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="association.html">L'Association</a></li>
+          <li><a href="administratif.html">Pôle Administratif</a></li>
+          <li><a href="social.html" class="active">Pôle Social</a></li>
+          <li><a href="index.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Section d’introduction -->
+  <section class="hero-small">
+    <div class="container">
+      <h1>Pôle Social</h1>
+      <p>Accompagner, orienter et soutenir les personnes en situation de handicap.</p>
+    </div>
+  </section>
+
+  <!-- Présentation -->
+  <section class="social-intro">
+    <div class="container">
+      <h2>Nos missions</h2>
+      <br>
+      <p>
+        Le Pôle Social de l'APATPH assure un accompagnement personnalisé pour faciliter l’insertion sociale et professionnelle, l’accès aux droits <br> et l’écoute des personnes accompagnées.
+      </p>
+    </div>
+  </section>
+
+  <!-- Services -->
+  <section class="social-services">
+    <div class="container">
+      <h2>Nos services</h2>
+      <div class="service-grid">
+        <div class="service">
+          <h3>Accompagnement administratif</h3>
+          <p>Assistance pour les démarches CAF, CPAM, MDPH, etc.</p>
+        </div>
+        <div class="service">
+          <h3>Soutien social</h3>
+          <p>Écoute et accompagnement social par une équipe dédiée.</p>
+        </div>
+        <div class="service">
+          <h3>Accès aux droits</h3>
+          <p>Information et appui dans l'ouverture ou le maintien de droits.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Équipe -->
+  <section class="social-team">
+    <div class="container">
+      <h2>Notre équipe</h2>
+      <p>
+        Le pôle est animé par une équipe pluridisciplinaire composée de travailleurs sociaux, assistants administratifs et référents de parcours.
+      </p>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 APATPH - Tous droits réservés</p>
+  </footer>
+
 </body>
 </html>

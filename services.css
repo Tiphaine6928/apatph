@@ -1,119 +1,169 @@
-/* Import d'une police Google Fonts */
+/* === IMPORT FONTS === */
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap');
 
-/* Réinitialisation de base */
+/* === BASE RESET === */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Montserrat', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
 }
 
 body {
-    background-color: #f9f9f9;
-    color: #333;
+  background-color: #f9f9f9;
+  color: #333;
 }
 
-/* Conteneur général */
+/* === GLOBAL CONTAINER === */
 .container {
-    width: 90%;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px 0;
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px 0;
 }
 
 /* === HEADER & NAVIGATION === */
 header {
-    background-color: #004080;
-    color: white;
-    padding: 10px 0;
-    position: relative;
-    width: 100%;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  background-color: #004080;
+  color: white;
+  padding: 10px 0;
+  position: relative;
+  width: 100%;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
 header .container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 10px;
-    text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  text-align: center;
 }
 
 .logo-nom {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .logo-nom .logo {
-    height: 140px;
-    width: auto;
-    margin-bottom: 10px;
-    border-radius: 15px;
+  height: 140px;
+  width: auto;
+  margin-bottom: 10px;
+  border-radius: 15px;
 }
 
 nav ul {
-    list-style: none;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
 }
 
 nav ul li a {
-    text-decoration: none;
-    color: white;
-    font-weight: 600;
-    transition: color 0.3s;
+  text-decoration: none;
+  color: white;
+  font-weight: 600;
+  transition: color 0.3s;
 }
 
 nav ul li a:hover {
-    color: #ffcc00;
+  color: #ffcc00;
 }
 
 /* === PAGE PÔLE ADMINISTRATIF === */
 .pole-admin h1 {
-    margin-top: 40px; /* espace à cause du header fixe */
-    font-size: 4rem;
-    color: #004080;
-    text-align: center;
-    margin-bottom: 40px;
-  }
-  
-  .pole-admin section {
-    margin-bottom: 40px;
-  }
-  
-  .pole-admin .intro p,
-  .pole-admin .equipe p {
-    font-size: 1.1rem;
-    line-height: 1.6;
-    color: #333;
-    text-align: center;
-    max-width: 800px;
-    margin: 0 auto;
-  }
-  
-  .pole-admin h2 {
-    color: #004080;
-    margin-bottom: 15px;
-    font-size: 1.8rem;
-    text-align: center;
-  }
-  
-  .pole-admin ul {
-    list-style: none;
-    padding: 0;
-    max-width: 600px;
-    margin: 0 auto;
-  }
-  
-  .pole-admin ul li {
-    background: #f1f1f1;
-    padding: 10px 15px;
-    border-radius: 8px;
-    margin-bottom: 10px;
-    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.05);
-  }
-  
+  margin-top: 40px;
+  font-size: 4rem;
+  color: #004080;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.pole-admin section {
+  margin-bottom: 40px;
+}
+
+.pole-admin .intro p,
+.pole-admin .equipe p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #333;
+  text-align: center;
+  max-width: 300px;
+  margin: 0 auto;
+}
+
+.pole-admin h2 {
+  color: #004080;
+  margin-bottom: 15px;
+  font-size: 1.8rem;
+  text-align: center;
+}
+
+.pole-admin ul {
+  list-style: none;
+  padding: 0;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.pole-admin ul li {
+  background: #f1f1f1;
+  padding: 10px 15px;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.05);
+}
+
+/* === PAGE PÔLE SOCIAL === */
+.hero-small {
+  padding: 100px 20px 60px;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.hero-small h1 {
+  font-size: 4rem;
+  margin-bottom: 10px;
+  color: #004080;
+}
+
+.hero-small p {
+  font-size: 1.2rem;
+}
+
+.social-intro,
+.social-services,
+.social-team {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.social-services .service-grid {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+
+.social-services .service {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  flex: 1;
+  min-width: 250px;
+  max-width: 300px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.social-services .service h3 {
+  color: #004080;
+  margin-bottom: 10px;
+}
+
