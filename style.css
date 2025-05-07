@@ -158,6 +158,34 @@ section h2 {
     order: 2;
 }
 
+/* === SECTION E-BOUTIQUE === */
+.eboutique {
+    background-color: #f9f9f9;
+    padding: 60px 0;
+    text-align: center;
+  }
+  
+  .eboutique .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap; /* Pour passer à la ligne sur petits écrans */
+  }
+  
+  .eboutique h2 {
+    font-size: 2rem;
+    color: #004080;
+    margin: 0;
+  }
+  
+  .eboutique img {
+    width: 150px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  }
+  
 /* === SERVICES === */
 .services {
     background-color: #f1f1f1;
