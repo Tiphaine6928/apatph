@@ -224,6 +224,20 @@ nav ul li a:hover {
   margin-bottom: 10px;
 }
 
+/* Apparition douce au scroll */
+.fade-in {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+  will-change: opacity, transform;
+}
+
+.fade-in.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+
 /* === FOOTER === */
 footer {
   background-color: #004080;

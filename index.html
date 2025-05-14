@@ -8,6 +8,13 @@
 </head>
 <body>
 
+    <!-- Sas d'entrée -->
+    <div id="intro-screen">
+        <img src="https://www.apatph.fr/wp-content/uploads/2024/07/logo-JPG.png" alt="Logo APATPH">
+        <p>Bienvenue sur le site de l'APATPH</p>
+        <button id="enter-button">Entrer</button>
+      </div>
+
     <!-- Barre de navigation -->
     <header>
         <div class="container">
@@ -190,6 +197,29 @@
             <p>&copy; 2025 APATPH. Tous droits réservés.</p>
         </div>
     </footer>
+
+    <script>
+        window.addEventListener("DOMContentLoaded", () => {
+          const intro = document.getElementById("intro-screen");
+      
+          // Si l'utilisateur a déjà cliqué sur "Entrer" pendant cette session, on ne montre pas le sas
+          if (sessionStorage.getItem("entered")) {
+            intro.style.display = "none";
+          }
+      
+          const enterBtn = document.getElementById("enter-button");
+          enterBtn.addEventListener("click", () => {
+            sessionStorage.setItem("entered", "true");
+            intro.style.transition = "opacity 0.6s ease";
+            intro.style.opacity = "0";
+            setTimeout(() => {
+              intro.style.display = "none";
+            }, 600);
+          });
+        });
+      </script>
+      
+      
 
 </body>
 </html>
