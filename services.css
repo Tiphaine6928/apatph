@@ -170,7 +170,7 @@ nav ul li a:hover {
 /* === PAGE PÔLE TRAVAIL === */
 
 .hero-travail {
-  padding: 50px 20px 60px;
+  padding: 50px 20px 30px;
   text-align: center;
   margin-top: 5px;
 }
@@ -189,8 +189,15 @@ nav ul li a:hover {
 .travail-intro,
 .travail-activites,
 .travail-equipe {
-  padding: 60px 20px;
+  padding: 30px 20px;
   text-align: center;
+}
+
+.travail-intro h2 {
+  text-align: center;
+  font-size: 2rem;
+  color: #004080;
+  margin-bottom: 20px;
 }
 
 .travail-intro p,
