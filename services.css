@@ -217,52 +217,60 @@ nav ul li a:hover {
 
 .activite-grid {
   display: flex;
-  flex-wrap: wrap;
-  gap: 30px;
-  justify-content: center;
+  flex-direction: column;
+  gap: 40px;
 }
 
 .activite {
-  background-color: white;
   display: flex;
   flex-direction: row;
-  gap: 20px;
+  align-items: center;
+  justify-content: space-between;
+  background-color: white;
   padding: 20px;
-  border-radius: 12px;
+  border-radius: 10px;
+  gap: 30px;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-  flex: 1 1 100%;
-  max-width: 1000px;
-  align-items: flex-start;
   flex-wrap: wrap;
 }
 
-/* Partie texte */
-.activite h3 {
+.activite .texte {
+  flex: 1;
+  min-width: 250px;
+}
+
+.activite .texte h3 {
+  font-size: 1.5rem;
   color: #004080;
-  font-size: 1.4rem;
   margin-bottom: 10px;
 }
 
-.activite p {
-  font-size: 1rem;
-  line-height: 1.5;
-  color: #333;
+.activite .texte p {
   margin-bottom: 10px;
+  line-height: 1.6;
+  color: #333;
 }
 
 .activite .btn-wrapper {
   margin-top: 10px;
 }
 
-/* Image à droite */
-.activite img {
-  width: 120px;
+.activite .image {
+  flex-shrink: 0;
+}
+
+.activite .image img {
+  width: 180px;
   height: auto;
   object-fit: contain;
-  align-self: center;
-  flex-shrink: 0;
-  margin-left: auto;
-  max-width: 150px;
+  border-radius: 8px;
+}
+
+.activite img {
+  width: 180px;
+  height: auto;
+  object-fit: contain;
+  border-radius: 8px;
 }
 
 /* Bouton comme page d’accueil */
@@ -296,7 +304,6 @@ nav ul li a:hover {
   transform: translateY(0);
 }
 
-
 /* === FOOTER === */
 footer {
   background-color: #004080;
@@ -310,11 +317,10 @@ footer {
 @media (max-width: 768px) {
   .activite {
     flex-direction: column;
-    align-items: center;
     text-align: center;
   }
 
-  .activite img {
-    margin: 20px 0 0;
+  .activite .image {
+    margin-top: 20px;
   }
 }
