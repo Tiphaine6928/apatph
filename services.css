@@ -244,6 +244,7 @@ nav ul li a:hover {
 .activite .texte {
   flex: 1;
   min-width: 250px;
+  text-align: left; /* 👈 Aligne le contenu à gauche */
 }
 
 .activite .texte h3 {
