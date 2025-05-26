@@ -187,9 +187,8 @@ nav ul li a:hover {
 }
 
 .travail-intro,
-.travail-activites,
-.travail-equipe {
-  padding: 30px 20px;
+.travail-activites {
+  padding: 0 20px;
   text-align: center;
 }
 
@@ -204,7 +203,7 @@ nav ul li a:hover {
 .travail-equipe p {
   font-size: 1.1rem;
   max-width: 800px;
-  margin: 0 auto;
+  margin: auto;
   line-height: 1.6;
 }
 
@@ -220,6 +219,7 @@ nav ul li a:hover {
   font-size: 2rem;
   color: #004080;
   margin-bottom: 40px;
+  margin-top: 0;
 }
 
 .activite-grid {
