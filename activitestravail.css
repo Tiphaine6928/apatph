@@ -63,3 +63,133 @@ nav ul li a {
 nav ul li a:hover {
     color: #ffcc00;
 }
+
+/* === SECTION TRAVAIL - ESAT === */
+
+.travail-esat {
+  background-color: #f9f9f9;
+  padding: 60px 20px;
+}
+
+.travail-esat h2 {
+  text-align: center;
+  font-size: 2rem;
+  color: #004080;
+  margin-bottom: 40px;
+}
+
+.activite-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.activite {
+  background-color: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+  line-height: 1.6;
+}
+
+.activite h3 {
+  font-size: 1.4rem;
+  color: #004080;
+  margin-bottom: 15px;
+}
+
+.activite p {
+  font-size: 1rem;
+  color: #333;
+}
+
+/* === SECTION "Comment intégrer l'ESAT ?" === */
+
+.integration-grid {
+  display: flex;
+  justify-content: center;
+}
+
+.integration {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 40px;
+  background-color: white;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+  max-width: 1000px;
+  width: 100%;
+}
+
+.integration-content {
+  flex: 1;
+  min-width: 250px;
+  text-align: left;
+}
+
+.integration-content h3 {
+  color: #004080;
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+}
+
+.integration-content form {
+  margin-bottom: 12px;
+}
+
+.btn-doc {
+  background-color: #004080;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  width: auto;
+  text-align: left;
+}
+
+.btn-doc:hover {
+  background-color: #0066cc;
+}
+
+.integration-content p {
+  font-size: 1rem;
+  margin-top: 20px;
+  line-height: 1.6;
+  color: #333;
+}
+
+.integration .image img {
+  width: 180px;
+  height: auto;
+  object-fit: contain;
+  border-radius: 10px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .integration {
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+  }
+
+  .integration-content {
+    text-align: center;
+  }
+
+  .btn-doc {
+    text-align: center;
+  }
+
+  .integration .image {
+    margin-top: 20px;
+  }
+}
+
