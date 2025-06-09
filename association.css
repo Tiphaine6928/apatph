@@ -77,28 +77,13 @@ nav ul li a:hover {
 .hero {
   background: url('images/association-bg.jpg') center/cover no-repeat;
   color: white;
-  padding: 100px 0;
+  padding: 30px 0;
   text-align: center;
-}
-
-.hero h1 {
-  font-size: 3rem;
-  margin-bottom: 10px;
-}
-
-.hero p {
-  font-size: 1.2rem;
 }
 
 /* Sections */
 section {
-  padding: 60px 0;
-}
-
-section h2 {
-  font-size: 2rem;
-  color: #004080;
-  margin-bottom: 20px;
+  padding: 20px 0;
 }
 
 section p,
@@ -107,12 +92,21 @@ section ul {
   color: #555;
 }
 
-.values ul {
-  list-style: none;
+.presentation h1 {
+  text-align: center;
+  font-size: 3rem;
 }
 
-.values ul li {
+.presentation p {
+  text-align: center;
+}
+.presentation2 p {
   margin-bottom: 10px;
+  text-align: center;
+}
+
+.objectifs p {
+  margin-bottom: 15px;
 }
 
 /* Footer */
